@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".find").click(function(){
+    $("#find").click(function(){
         var str = document.getElementById('t1').value 
         for (i = 0; i < str.length; i++) {
         if (str.charAt(i) == 'a' || str.charAt(i) == 'e'
@@ -8,7 +8,10 @@ $(document).ready(function(){
         }
         return alert("No vowels found for string " + str);
     });
-    $(".reverse").click(function(){
+    $("#clearFi").click(function(){
+        var str = document.getElementById('t1').value = "";
+    });
+    $("#reverse").click(function(){
         var num = document.getElementById('t2').value;
         rnum = 0;
         temp = num;
@@ -22,5 +25,8 @@ $(document).ready(function(){
         num = Math.floor(num / 10);
         } // xử lý thuật toán
         return alert("Reverse of num " + temp + " is " + rnum);
+    });
+    $("#clearRe").click(function(){
+        var str = document.getElementById('t2').value = "";
     });
 });
