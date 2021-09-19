@@ -21,4 +21,7 @@ $(document).ready(function(){
     $("#new").click(function(){
         location.reload();
     });
+    $("#home").click(function(){
+        location.href = "";
+    });
 });
