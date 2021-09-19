@@ -30,6 +30,6 @@ $(document).ready(function(){
         var str = document.getElementById('t2').value = "";
     });
     $("#home").click(function(){
-        location.href = "";
+        history.back();
     });
 });

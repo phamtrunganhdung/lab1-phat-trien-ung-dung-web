@@ -22,6 +22,6 @@ $(document).ready(function(){
         location.reload();
     });
     $("#home").click(function(){
-        location.href = "";
+        history.back();
     });
 });

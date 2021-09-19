@@ -32,6 +32,6 @@ function f(d) {
     else
     document.getElementById('res').value = d;
    }
-   $("#home").click(function(){
-    location.href = "";
-});
+function back(){
+history.back();
+};
