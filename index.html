@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Lab1 PTUD WEB</title>
+  <title>lab-1-phat-trien-ung-dung-web</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -12,13 +12,13 @@
   <style>
   .img {
     height: 200px;
-    background: #aaa;
     object-fit: cover;
     max-width: 350px;
     max-height: 100%;
   }
   .fa {
-      color: blue;
+      color: white;
+ 
   }
   .fa:hover {
       color: lightgray;
@@ -32,23 +32,23 @@
   <h1>1812745 - Phạm Trung Anh Dũng</h1>
 </div>
 
-<nav class="navbar navbar-expand-sm bg-primary navbar-light">
-  <a class="nav-link" href="/index.html">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="nav-brand active" href="/index.html">
     <i class="fa fa-home"></i>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav me-auto">
       <li class="nav-item">
-        <a class="nav-link" href="p1/jsexample.html">P1</a>
+        <a class="nav-link" href="p1/jsexample.html">Exercise 1</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="p2/2.html">P2</a>
+        <a class="nav-link" href="p2/2.html">Exercise 2</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="p3/3.html">P3</a>
+        <a class="nav-link" href="p3/3.html">Exercise 3</a>
       </li>    
     </ul>
   </div>  
@@ -62,45 +62,85 @@
       <div class="img">
           <img class="img col-sm-4" src="images/me.jpg" alt="">
       </div>
-      <p>Class: CTK42</p>
-      <h3>Some Links</h3>
+      <h4>Some links of me</h4>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+          <a class="nav-link active bg-dark" href="https://github.com/phamtrunganhdung">Github</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.facebook.com/profile.php?id=100009744435194">FB</a>
+          <a class="nav-link" href="https://www.facebook.com/profile.php?id=100009744435194">Facebook</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.youtube.com/channel/UCdQgYnUF3VuT0LlUoxZeC5g">YT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="https://www.youtube.com/channel/UCdQgYnUF3VuT0LlUoxZeC5g">Youtube</a>
         </li>
       </ul>
       <hr class="d-sm-none">
     </div>
     <div class="col-sm-8">
-      <h2>WWW</h2>
-      <h5>Title description, Dec 7, 2017</h5>
+      <h2>What is website</h2>
+      <h5>Title description, Dec 22, 2021</h5>
       <div class="img">
           <img src="images/www.jpg" alt="" class="img">
       </div>
-      <p>The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource ...</p>
+      <div class="web">
+        <p id="text1">A website is a collection of publicly accessible, interlinked Web pages that share a single domain name.</p><a id="read-more-web"  onclick=ReadMoreWeb()>...read more</a>
+      <p id="text2">Websites can be created and maintained by an individual, group, business or organization to serve a variety of purposes.
+
+        Together, all publicly accessible websites constitute the World Wide Web.
+        
+        Although it is sometimes called “web page,” this definition is wrong, since a website consists of several webpages. A website is also known as a “web presence” or simply “site”.</p><a  id="hide-web" onclick=HideWeb()>...hide</a>
+      </div>
+      
       <br>
-      <h2>HACK</h2>
-      <h5>Title description, Sep 2, 2017</h5>
+      <h2>What is hacking</h2>
+      <h5>Title description, Dec 22, 2021</h5>
       <div class="img">
           <img src="images/hack.jpg" alt="" class="img">
       </div>
-      <p>Hacking refers to the misuse of devices like computers, smartphones, tablets, and networks to cause damage to or corrupt systems, gather information on users, ...</p>
+      <p>Hacking refers to activities that seek to compromise digital devices, such as computers, smartphones, </p><a  id="read-more-hacking" onclick=ReadMoreHack()>...read more</a>
+      <p id="text3">tablets, and even entire networks. And while hacking might not always be for malicious purposes, nowadays most references to hacking, and hackers, characterize it/them as unlawful activity by cybercriminals—motivated by financial gain, protest, information gathering (spying), and even just for the “fun” of the challenge.</p>
+      <a  id="hide-hacking" onclick=HideHack()>...hide</a>
     </div>
   </div>
 </div>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>DLU</p>
+  <p>1812745 - DLU</p>
 </div>
 
 </body>
+
+<script>
+  document.getElementById('hide-web').style.display = 'none';
+  document.getElementById('hide-web').style.color = 'blue';
+  document.getElementById('read-more-web').style.color = 'blue';
+  document.getElementById('read-more-hacking').style.color = 'blue';
+    document.getElementById('hide-hacking').style.color = 'blue';
+  document.getElementById('text2').style.display = 'none';
+  document.getElementById('hide-hacking').style.display = 'none';
+  document.getElementById('text3').style.display = 'none';
+  function ReadMoreWeb(){
+    document.getElementById('read-more-web').style.display = 'none';
+    document.getElementById('hide-web').style.display = 'block';
+    document.getElementById('text2').style.display = 'block';
+  }
+  function HideWeb(){
+    document.getElementById('read-more-web').style.display = 'block';
+    document.getElementById('hide-web').style.display = 'none';
+    document.getElementById('text2').style.display = 'none';
+  }
+  function ReadMoreHack(){
+    document.getElementById('read-more-hacking').style.display = 'none';
+    document.getElementById('hide-hacking').style.display = 'block';
+    document.getElementById('text3').style.display = 'block';
+  }
+  function HideHack(){
+    document.getElementById('read-more-hacking').style.display = 'block';
+    document.getElementById('hide-hacking').style.display = 'none';
+    document.getElementById('text3').style.display = 'none';
+  }
+  
+
+  
+</script>
 </html>
